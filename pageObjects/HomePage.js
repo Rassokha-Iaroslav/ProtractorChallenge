@@ -1,5 +1,5 @@
 var HomePage = function () {
-    var env = require('../TestData/index.js')
+    var env = require('../testData/index.js')
     var searchField = element(by.css("pbc-searchfield >form > input[placeholder='Suchbegriff']"));
     var cookieButton = element(by.css("button#onetrust-accept-btn-handler"));
     var expectedConditions = protractor.ExpectedConditions;
