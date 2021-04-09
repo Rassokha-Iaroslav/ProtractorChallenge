@@ -9,7 +9,7 @@ describe('Protractor Automation challenge', function () {
 
         await homePage.openMainPage();
 
-        expect(homePage.getPageTitle()).toEqual('PAYBACK Bonusprogramm » Punkten + Coupons + Aktionen');
+        expect(browser.getTitle()).toEqual(homePage.getPageTitle());
     })
 
     it('Search for a product and assert that it could be bought', async function () {
