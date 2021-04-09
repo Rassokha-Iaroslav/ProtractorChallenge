@@ -12,7 +12,7 @@ describe('Protractor Automation challenge', function () {
         expect(homePage.getPageTitle()).toEqual('PAYBACK Bonusprogramm » Punkten + Coupons + Aktionen');
     })
 
-    it('Search and assert from main page', async function () {
+    it('Search for a product and assert that it could be bought', async function () {
         await homePage.searchForProduct("fressnapf");
 
         await searchResultPage.showAllSearchResults();
