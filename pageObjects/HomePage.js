@@ -1,10 +1,11 @@
 var HomePage = function () {
+    var env = require('../TestData/index.js')
     var searchField = element(by.css("pbc-searchfield >form > input[placeholder='Suchbegriff']"));
     var cookieButton = element(by.css("button#onetrust-accept-btn-handler"));
     var expectedConditions = protractor.ExpectedConditions;
 
     this.openMainPage = async function () {
-        browser.get('https://www.payback.de');
+        await browser.get(env.testData.url);
         if (cookieButton.isPresent()) {
             await cookieButton.click();
         }
