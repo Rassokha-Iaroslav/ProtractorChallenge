@@ -12,7 +12,7 @@ describe('Protractor Automation challenge', function () {
         expect(browser.getTitle()).toEqual(homePage.getPageTitle());
     })
 
-    it('Search for a product and assert that it could be bought', async function () {
+    it('Search for a product and assert that it is available for purchase', async function () {
         await homePage.searchForProduct("fressnapf");
 
         await searchResultPage.showAllSearchResults();
