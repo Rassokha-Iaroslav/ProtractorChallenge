@@ -5,9 +5,13 @@ exports.config = {
     multiCapabilities: [
         {
             browserName: 'chrome',
-        },
-        {
-            browserName: 'firefox',
+            // chromeOptions: {
+            //     args: [ "--headless", "--disable-gpu"]
+            // }
         }
+        // ,
+        // {
+        //     browserName: 'firefox',
+        // }
     ]
 }
