@@ -4,7 +4,7 @@ exports.config = {
     specs: ['searchTests.js'],
     multiCapabilities: [
         {
-            'browserName': 'chrome',
+            browserName: 'chrome',
         },
         {
             browserName: 'firefox',
