@@ -6,7 +6,7 @@ var HomePage = function () {
 
     this.openMainPage = async function () {
         await browser.get(env.testData.url);
-        if (cookieButton.isPresent()) {
+        if (await cookieButton.isPresent()) {
             await cookieButton.click();
         }
     };
